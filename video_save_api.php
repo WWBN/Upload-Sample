@@ -3,10 +3,6 @@
 $APISecret = 'c7abebdaf07893e7f29d34a0979fc126';
 $AVideoSiteURL = "https://demo.avideo.com/";
 
-
-$AVideoSiteURL = "https://vlu.me/";
-$APISecret = '9de3894516ed33c6ab41460b41734476';
-
 // File paths
 $videos_id = 46;
 $created = date('Y-m-d H:i:s', strtotime('-1 year')); // set the created 1 year ago
