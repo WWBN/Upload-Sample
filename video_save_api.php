@@ -1,35 +1,27 @@
 <?php
 
+$APISecret = 'c7abebdaf07893e7f29d34a0979fc126';
 $AVideoSiteURL = "https://demo.avideo.com/";
 
 $user = 'admin';
 $pass = '123';
 
 // File paths
-$videoFilePath = 'video.mp4';
-$imageFilePath = 'image.png';
+$videos_id = 46;
+$created = date('Y-m-d H:i:s', strtotime('-1 year')); // set the created 1 year ago
 
 // API endpoint URL
-$apiUrl = "{$AVideoSiteURL}plugin/MobileManager/upload.php";
+$apiUrl = "{$AVideoSiteURL}plugin/API/set.json.php?APIName=video_save&APISecret={$APISecret}";
 
 // cURL initialization
 $ch = curl_init();
 
-$imageData = base64_encode(file_get_contents($imageFilePath));
 
 // Set the POST fields
 $postFields = array(
-    'user' => $user, // required
-    'pass' => $pass, // required
-    'upl' => new CURLFile($videoFilePath), // required
-    'base64PNG' => $imageData, // optional
-    'title' => 'Upload test title '.date('Y-m-d H:i:s'), // optional
-    'description' => 'This is my video description. sent in '.date('Y-m-d H:i:s'), // optional
-    'categories_id' => 1, // optional
-    'can_share' => 1, // optional
-    'video_password' => '123456' // optional
+    'videos_id' => $videos_id,
+    'created' => $created
 );
-
 
 // Set cURL options
 curl_setopt($ch, CURLOPT_URL, $apiUrl);
