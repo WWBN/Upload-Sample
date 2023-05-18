@@ -9,9 +9,6 @@ To use this PHP script, ensure that you have the following:
 - AVideo installed and configured on your server. You can find more information about AVideo [here](https://github.com/WWBN/AVideo).
 - PHP installed on your server. You can find more information about PHP installation [here](https://www.php.net/manual/en/install.php).
 - The necessary PHP extensions for handling file uploads. Ensure that `file_uploads` is enabled in your PHP configuration.
-- A valid API key for the AVideo API. You can obtain an API key by following the instructions provided by AVideo.
-
-## Usage
 
 ## Usage
 
