@@ -21,7 +21,7 @@ To use this PHP script, ensure that you have the following:
 
 3. Modify the following variables with your AVideo API credentials and file paths:
 
----
+````
 
 $AVideoSiteURL = "https://demo.avideo.com/"; // Replace with your AVideo site URL
 
@@ -32,7 +32,7 @@ $pass = '123'; // Replace with your AVideo password
 $videoFilePath = '/path/to/video/video.mp4'; // Replace with the path to your video file
 $imageFilePath = '/path/to/image/image.png'; // Replace with the path to your image file
 
----
+````
 
 4. (Optional) Modify any additional parameters or metadata according to your requirements. Refer to the AVideo API documentation for available options.
 
@@ -40,11 +40,11 @@ $imageFilePath = '/path/to/image/image.png'; // Replace with the path to your im
 
 6. Run the script by executing the following command in your command-line interface:
 
----
+````
 
 php upload.php
 
----
+````
 
 Ensure that you have the necessary permissions to read the video and image files specified.
 
