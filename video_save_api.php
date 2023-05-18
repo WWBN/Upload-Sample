@@ -3,8 +3,9 @@
 $APISecret = 'c7abebdaf07893e7f29d34a0979fc126';
 $AVideoSiteURL = "https://demo.avideo.com/";
 
-$user = 'admin';
-$pass = '123';
+
+$AVideoSiteURL = "https://vlu.me/";
+$APISecret = '9de3894516ed33c6ab41460b41734476';
 
 // File paths
 $videos_id = 46;
@@ -20,6 +21,7 @@ $ch = curl_init();
 // Set the POST fields
 $postFields = array(
     'videos_id' => $videos_id,
+    'title' => "Created date modified to $created",
     'created' => $created
 );
 
